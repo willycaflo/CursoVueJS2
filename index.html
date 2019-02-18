@@ -9,9 +9,10 @@
 
 </head>
 <body>
-    <div class="vue">
-        <span>{{ mostrarMensaje() }}</span>
-        <img v-bind:src="src" alt="imagen">
+    <div id="vm">
+        <h3>{{ mensaje }}</h3>
+        <button v-on:click="mensaje= 'Este es el NUEVO mensaje'">Cambiar Mensaje</button>
+        <button v-on:click="destruir">Destruir Instancia</button>
     </div>
     <script src="vue.js"></script>
 </body>
