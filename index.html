@@ -10,10 +10,12 @@
 </head>
 <body>
     <div id="vm">
-        <div v-if="parrafo == 1">Este es el primero div</div>
-        <div v-else-if="parrafo == 2">Este es el segundo div</div>
-        <div v-else-if="parrafo == 3">Este es el tercer div</div>
-        <div v-else>Parrafo no es ni 1 ni 2 ni 3</div>
+        <div v-show="mostrar">
+            <h3>Titulo</h3>
+            <p>Este es un ṕarrafo de prueba</p>
+            Este es el primero div
+        </div>
+        <div>Este es el segundo div</div>
     </div>
     <script src="vue.js"></script>
 </body>
