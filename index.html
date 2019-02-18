@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Computed properties</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 </head>
 <body>
     <div id="vm">
-        <h3>{{ mensaje }}</h3>
-        <button v-on:click="mensaje= 'Este es el NUEVO mensaje'">Cambiar Mensaje</button>
-        <button v-on:click="destruir">Destruir Instancia</button>
+        <button v-on:click="primero++">Incrementar el primero</button>
+        <button v-on:click="segundo++">Incrementar el segundo</button>
+        <button v-on:click="tercero++">Incrementar el tercero</button>
+        <button v-on:click="cuarto++">Incrementar el cuarto</button>
+        <p>Primero: {{ primero }}</p>
+        <p>Segundo: {{ segundo }}</p>
+        <p>Tercero: {{ tercero }}</p>
+        <p>Cuarto: {{ cuarto }}</p>
+        <p>Total: {{ total }}</p>
     </div>
     <script src="vue.js"></script>
 </body>
