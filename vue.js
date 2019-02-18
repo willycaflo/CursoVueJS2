@@ -1,6 +1,6 @@
 new Vue({
     el: '#vm',
     data: {
-        nombre: 'Guillermo'
+        imagen: 'http://lorempixel.com/300/200/'
     },
 });

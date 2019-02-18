@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Computed properties</title>
+    <title>Directivas</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 </head>
 <body>
     <div id="vm">
-       <input type="text" v-model="nombre"/>
-       <hr>
-       Hola {{ nombre }}, bienvenido al curso de Vue.js
+       <img v-bind:src="imagen" alt="Imagen">
     </div>
     <script src="vue.js"></script>
 </body>
