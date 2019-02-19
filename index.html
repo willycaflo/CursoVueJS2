@@ -11,8 +11,8 @@
 <body>
     <div id="vm">
         <ul>
-            <li v-for="pais in paises">
-                {{ pais }}
+            <li v-for="(pais, index) in paises">
+               {{ index + 1 }} {{ pais }}
             </li>
         </ul>
     </div>
