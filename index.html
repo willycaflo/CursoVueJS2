@@ -10,7 +10,9 @@
 </head>
 <body>
     <div id="vm">
-       <button v-on:click="alerta('Este es el mensaje de la alerta')">Mostrar alerta</button>
+        <div style="height: 300px; width: 300px; border: 1px solid #000;" v-on:mousemove="mostrarUbicacion">
+        </div>
+        x: {{ x }}, y: {{ y }}
     </div>
     <script src="vue.js"></script>
 </body>
