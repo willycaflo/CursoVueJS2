@@ -1,6 +1,7 @@
 new Vue({
     el: '#vm',
     data: {
+        contador: 0,
         x: 0,
         y: 0
     },
@@ -8,6 +9,9 @@ new Vue({
         mostrarUbicacion: function(evento){
             this.x = evento.clientX;
             this.y = evento.clientY;
+        },
+        sumar:function(cantidad){
+            this.contador += cantidad;
         }
     },
 });

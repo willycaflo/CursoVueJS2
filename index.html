@@ -10,9 +10,9 @@
 </head>
 <body>
     <div id="vm">
-        <div style="height: 300px; width: 300px; border: 1px solid #000;" v-on:mousemove="mostrarUbicacion">
+        <div style="height: 300px; width: 300px; border: 1px solid #000;" v-on:mousemove="mostrarUbicacion" v-on:click="sumar(3)">
         </div>
-        x: {{ x }}, y: {{ y }}
+        x: {{ x }}, y: {{ y }}, contador: {{ contador }}
     </div>
     <script src="vue.js"></script>
 </body>
