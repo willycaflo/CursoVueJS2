@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Directivas</title>
+    <title>Eventos</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 </head>
 <body>
     <div id="vm">
-        <ul>
-            <li v-for="(valor,llave) in empleado">
-                {{ llave }} => {{ valor }}
-            </li>
-        </ul>
+       <button v-on:click="sumarUno">Sumar 1</button>
+       <button v-on:click="restarUno">Restar 1</button>
+       <hr>
+       {{ contador }}
     </div>
     <script src="vue.js"></script>
 </body>

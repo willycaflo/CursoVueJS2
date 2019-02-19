@@ -1,13 +1,14 @@
 new Vue({
     el: '#vm',
     data: {
-        empleado:{
-            nombre:'Juan Perez',
-            edad: '30',
-            nacionalidad: 'Mexicano',
-            profesion: 'Programador',
-            empresa: 'Visor',
-            telefono:'5512345678'
+        contador: 0,
+    },
+    methods: {
+        sumarUno: function(){
+            this.contador += 1;
+        },
+        restarUno: function(){
+            this.contador -= 1;
         }
-    }
+    },
 });
