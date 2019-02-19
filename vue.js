@@ -1,6 +1,13 @@
 new Vue({
     el: '#vm',
     data: {
-        paises: ["México","España","Colombia"]
+        empleado:{
+            nombre:'Juan Perez',
+            edad: '30',
+            nacionalidad: 'Mexicano',
+            profesion: 'Programador',
+            empresa: 'Visor',
+            telefono:'5512345678'
+        }
     }
 });
