@@ -11,9 +11,12 @@
 <body>
     <div id="vm">
         <ul>
-            <li v-for="(pais, index) in paises">
-               {{ index + 1 }} {{ pais }}
-            </li>
+            <template v-for="(pais, index) in paises">
+                <li>
+                {{ index + 1 }} {{ pais }}
+                </li>
+                <hr>
+            </template>
         </ul>
     </div>
     <script src="vue.js"></script>
