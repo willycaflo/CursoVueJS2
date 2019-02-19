@@ -10,12 +10,11 @@
 </head>
 <body>
     <div id="vm">
-        <div v-show="mostrar">
-            <h3>Titulo</h3>
-            <p>Este es un ṕarrafo de prueba</p>
-            Este es el primero div
-        </div>
-        <div>Este es el segundo div</div>
+        <ul>
+            <li v-for="pais in paises">
+                {{ pais }}
+            </li>
+        </ul>
     </div>
     <script src="vue.js"></script>
 </body>
